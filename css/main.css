@@ -1,0 +1,103 @@
+#categories {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    overflow-x: hidden;
+}
+#products {
+    width: 100%;
+    display: grid;
+    height: auto;
+    grid-template-columns: 100%;
+    /* overflow-x: hidden; */
+    /* overflow-y: none; */
+    grid-gap: 50px;
+}
+.product {
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+    border-radius: 30px;
+    /* color:#fff; */
+    border:1px solid #fff;
+    padding: 0px 0px 10px 0px;
+    margin: 0px auto;
+}
+.left {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #000;
+}
+.right {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: yellowgreen;
+}
+.left .hero-button {
+    border: 2px solid #000;
+  color: #000;
+  background-color: #fff;
+}
+.left .hero-button:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #000;
+  }
+.product .hero-button {
+    border: 2px solid #000;
+  color: #000;
+  background-color: #fff;
+}
+.product .hero-button:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #000;
+  }
+.right .hero-button {
+    border: 2px solid yellowgreen;
+  color: yellowgreen;
+  background-color: #fff;
+}
+.right .hero-button:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: yellowgreen;
+  }
+@media screen and (min-width: 1024px) {
+    #categories {
+        grid-template-columns: 50% 50%;
+    }
+    #products {
+        grid-template-columns: auto auto auto;
+    }
+}
+@media screen and (min-width: 768px) {
+    #products {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (min-width: 1280px) {
+    #products {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+.product img {
+    height: 300px;
+    width: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}

@@ -1,0 +1,144 @@
+#header {
+  height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: url("../shoes/bg7.jpg");
+}
+.lg-img {
+  display: none;
+}
+.hero {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.navbar {
+  height: 50px;
+  display: none;
+  padding: 10px 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: space-between;
+  color: #fff;
+  width: 100%;
+}
+.nav-brand {
+  font-weight: bolder;
+  font-size: 30px;
+}
+.hero-title h1 {
+  color: #fff;
+}
+@media screen and (max-width: 1023px) {
+  .navbar {
+    justify-content: center;
+  }
+}
+.hero-button {
+  padding: 15px 80px;
+  font-size: 18px;
+  border-radius: 25px;
+  border: 2px solid rgb(199, 7, 7);
+  color: rgb(199, 7, 7);
+  background-color: #fff;
+  cursor: pointer;
+  /* width: 100px; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s;
+  font-weight: bolder;
+}
+.hero-button:hover {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: rgb(199, 7, 7);
+}
+.nav-button-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: -20px;
+}
+.hero-title h1 {
+  font-size: 40px;
+  text-align: center;
+}
+.nav-button {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  #header {
+    background-color: #fff;
+    background-image: url();
+  }
+  .hero {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /* height: 90vh; */
+  }
+  .lg-img {
+    display: block;
+    height: 100%;
+    width: 50vw;
+    background-image: url("../shoes/rbg2.png");
+    transition: all 0.5s;
+  }
+  .lg-img:hover {
+    display: block;
+    height: 100%;
+    width: 50vw;
+    background-image: url("../shoes/rbg3.png");
+  }
+  .lg-img img {
+    height: 100%;
+    width: 100%;
+    display: none;
+  }
+  .hero-title {
+    flex-grow: 1;
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-title h1 {
+    color: #000;
+    font-size: 50px;
+  }
+  .navbar {
+    background-color: #fff;
+    position: relative;
+    color: #000;
+    justify-content: space-between;
+  }
+  .hero-button {
+    padding: 15px 80px;
+    font-size: 18px;
+    border: 2px solid rgb(199, 7, 7);
+    border-radius: 25px;
+    color: rgb(199, 7, 7);
+    background-color: #fff;
+  }
+  .nav-button {
+    padding: 10px 50px;
+    display: none;
+    border-radius: 25px;
+    border: 2px solid rgb(199, 7, 7);
+    color: rgb(199, 7, 7);
+    background-color: #fff;
+    cursor: pointer;
+    /* width: 100px; */
+    margin: 0px auto;
+    transition: all 0.5s;
+    font-weight: bolder;
+  }
+  .nav-button:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: rgb(199, 7, 7);
+  }
+}
